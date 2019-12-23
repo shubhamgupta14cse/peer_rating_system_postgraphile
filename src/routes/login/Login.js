@@ -17,7 +17,6 @@ class Login extends React.Component {
     title: PropTypes.string.isRequired,
   };
   static contextTypes = { fetch: PropTypes.func.isRequired };
-  // this.context.fetch(`/api/posts/${id}`, { method: 'DELETE' }).then(...);
 
    getCookie(cname) {
     var name = cname + "=";
