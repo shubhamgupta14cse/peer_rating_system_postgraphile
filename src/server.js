@@ -140,7 +140,7 @@ app.use(
                 async resolve(resolver, user, args, context, _resolveInfo) {
                   const jwtToken = await resolver();
                   const expiresIn = 60 * 60 * 24 * 180; // 180 days
-                  console.log("this is the fuckin token----------",jwtToken)
+                  console.log("this is the token----------",jwtToken)
                   console.log("But this ain't signed ----------------------------------");
                   // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VyX2lkIjo2LCJuYW1lIjoic2h1YmhhbSIsImlhdCI6MTU2NTcyODYzNSwiZXhwIjoxNTY1ODE1MDM1LCJhdWQiOiJwb3N0Z3JhcGhpbGUiLCJpc3MiOiJwb3N0Z3JhcGhpbGUifQ.m1085Brj0eLBKdeu4ky7R33V7gSX-0sEchXzBDLdZeM"
                   // context.res.cookie('id_token', jwtToken, { maxAge: 1000 * expiresIn, httpOnly: true });
